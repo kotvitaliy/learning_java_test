@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 25.312 s <<< FAILURE! - in TestSuite
+setUp(com.epam.ta.test.UserAccessTests)  Time elapsed: 25.221 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:48344
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'VKOTLUBAEV', ip: '192.168.10.97', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: FirefoxDriver
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:48344
+Caused by: java.net.ConnectException: Connection refused: connect
+
+stopBrowser(com.epam.ta.test.UserAccessTests)  Time elapsed: 25.222 s  <<< FAILURE!
+java.lang.NullPointerException
+
