@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverSingleton {
 
-    private static final String RESOURCE_PATH = "src\\test\\resources\\";
+//    private static final String RESOURCE_PATH = "src\\test\\resources\\";
     private static WebDriver driver;
 
 
@@ -17,13 +17,13 @@ public class DriverSingleton {
         if (null == driver){
             switch (System.getProperty("browser")){
                 case "firefox": {
-                    System.setProperty("webdriver.gecko.driver", RESOURCE_PATH + "geckodriver.exe");
-//                    WebDriverManager.firefoxdriver().setup();
+//                    System.setProperty("webdriver.gecko.driver", RESOURCE_PATH + "geckodriver.exe");
+                    WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
                 }
                 default: {
-                    System.setProperty("webdriver.chrome.driver", RESOURCE_PATH + "chromedriver.exe");
-                    //WebDriverManager.chromedriver().setup();
+//                    System.setProperty("webdriver.chrome.driver", RESOURCE_PATH + "chromedriver.exe");
+                    WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                 }
             }
